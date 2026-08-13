@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/3) · t3b04-gd-kb-info</title>
+  <meta name="description" content="t3b04-gd-kb-info에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://gongdeok-song-review.link-hub.org/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: rgba(255, 255, 255, 0.02);
+      --border-color: rgba(255, 255, 255, 0.05);
+      --text-main: #f8fafc;
+      --text-muted: #64748b;
+      --accent: #ec4899;
+      --accent-glow: rgba(236, 72, 153, 0.15);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Inter', 'Noto Sans KR', sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      padding: 40px 20px;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(236, 72, 153, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.02) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+    
+    .container {
+      max-w: 680px;
+      margin: 0 auto;
+    }
+    
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-b: 1px solid var(--border-color);
+    }
+    
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 18px;
+      box-shadow: 0 0 15px rgba(236, 72, 153, 0.3);
+    }
+    
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .profile-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text-main);
+    }
+    
+    .profile-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    
+    .essay-body {
+      font-weight: 300;
+      color: #cbd5e1;
+      margin-bottom: 64px;
+    }
+    
+    .essay-paragraph {
+      margin-bottom: 28px;
+      text-align: justify;
+    }
+    
+    .essay-paragraph-bold {
+      font-weight: 500;
+      color: var(--text-main);
+      border-l: 3px solid var(--accent);
+      padding-left: 16px;
+      margin: 36px 0 28px 0;
+    }
+    
+    .ugc-section {
+      margin-top: 64px;
+      padding-top: 48px;
+      border-t: 1px solid var(--border-color);
+    }
+    
+    .ugc-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+    }
+    
+    .review-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: all 0.3s ease;
+    }
+    
+    .review-card:hover {
+      border-color: rgba(236, 72, 153, 0.15);
+      background: rgba(255, 255, 255, 0.03);
+    }
+    
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    
+    .reviewer-name {
+      font-weight: 500;
+      color: var(--text-main);
+    }
+    
+    .review-date {
+      color: var(--text-muted);
+    }
+    
+    .review-rating {
+      color: #f59e0b;
+      letter-spacing: 2px;
+    }
+    
+    .review-content {
+      font-size: 14px;
+      color: #94a3b8;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    
+    footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-t: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+  <meta property="og:title" content="글 목록 (2/3) · t3b04-gd-kb-info">
+  <meta property="og:description" content="t3b04-gd-kb-info에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://gongdeok-song-review.link-hub.org/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 43개 · 2/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0269.html">공덕 노래방 정보 활용한 구글 알고리즘 고신용 도메인 보증 카드 발급 전략</a>
+        <p class="post-item__summary">디지털 환경에서 특정 분야의 데이터를 분석하는 일은 매우 중요한 작업입니다. 공덕 노래방 정보 데이터를 처리할 때 신뢰할 수 있는 자산 상태를 확인하는 과정은 필수적입니다. 이러한 맥락에서 구글 알</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0270.html">공덕 노래방 정보 기준 마포 단체 회식용 대형 룸 노래방 가격 정보 비교</a>
+        <p class="post-item__summary">마포 지역에서 비즈니스 모임을 기획할 때는 장소 선정에 신중을 기해야 합니다. 특히 공덕 노래방 정보 데이터를 참고하여 회식 분위기에 적합한 대형 룸을 확보하는 일은 성공적인 모임의 시작입니다. 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0271.html">공덕 노래방 정보 활용한 합정 셔츠룸 단골들이 뽑은 핫플 매거진 확인법</a>
+        <p class="post-item__summary">많은 분이 새로운 놀이 공간을 찾을 때 실패를 경험하곤 합니다. 공덕 노래방 정보와 같이 검증된 데이터를 기준으로 삼지 않고 무작정 방문하는 것이 가장 큰 원인입니다. 이제 합정 셔츠룸 단골들이 뽑</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0463.html">공덕 노래방 정보 활용하여 합정 노래방 추천정보 확인하기</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾다 보면 많은 이들이 예약을 간과하여 현장에서 곤란을 겪는 모습을 보곤 합니다. 합정 지역에서 쾌적한 시간을 보내기 위해서는 방문 전 전화 예약 절차를 반드시 밟는 것이 중요합</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0464.html">공덕 노래방 정보 공유 및 연남 클럽 추천정보 필수 체크리스트</a>
+        <p class="post-item__summary">공덕 노래방 정보를 살피던 분들이 연남 지역으로 이동할 때 가장 먼저 체크해야 할 것은 바로 위치와 접근성입니다. 연남은 골목 곳곳에 매력적인 공간이 숨어 있는 만큼, 대중교통으로 가기 쉬운지 혹은</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0465.html">공덕 노래방 정보 활용한 합정 셔츠룸 추천정보 및 시설 이용 가이드</a>
+        <p class="post-item__summary">오랜만에 동료들과 합정 인근에서 모임을 가진 뒤, 평소 접하던 공덕 노래방 정보 등을 참고하여 색다른 분위기의 셔츠룸을 방문하려는 이들이 늘고 있습니다. 하지만 생소한 형태의 업소를 방문할 때는 시</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0466.html">공덕 노래방 정보 바탕으로 한 공덕 가라오케 추천정보 이용 팁</a>
+        <p class="post-item__summary">많은 분들이 공덕 노래방 정보 등을 검색하며 가라오케 또한 일반 노래방과 동일한 운영 방식을 가질 것이라 오해하곤 합니다. 하지만 가라오케는 단순한 가창 공간을 넘어 사교와 비즈니스 접대가 결합된 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0467.html">공덕 노래방 정보 통해 알아보는 상수 마사지 추천정보와 이용법</a>
+        <p class="post-item__summary">지친 몸을 회복하기 위해 마사지 숍을 찾는 사람들은 공덕 노래방 정보 등을 확인하며 여가 시간을 계획하곤 합니다. 상수 지역에서 성공적인 마사지 경험을 얻기 위해서는 시설이 갖추어야 할 기본 충족 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0468.html">공덕 노래방 정보를 찾는다면 망원 노래방 추천정보 비교 가이드</a>
+        <p class="post-item__summary">평소 퇴근길에 즐거운 시간을 보내기 위해 공덕 노래방 정보를 검색해 본 경험이 있으신가요. 익숙한 동네를 벗어나 조금 더 활기찬 분위기를 즐기고 싶을 때 우리는 자연스럽게 인근 지역의 새로운 장소를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0469.html">공덕 노래방 정보를 활용한 홍대 노래방 추천정보 신뢰도 판별법</a>
+        <p class="post-item__summary">많은 분이 공덕 노래방 정보를 검색하다가 홍대 인근의 더 큰 규모의 업소로 눈을 돌리곤 합니다. 성공적인 방문을 위해서는 단순히 포털 검색에 의존하기보다 검증된 절차를 거치는 것이 중요합니다. 단계</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0470.html">공덕 노래방 정보와 비교하는 공덕 셔츠룸 추천정보 선택 기준</a>
+        <p class="post-item__summary">흔히 공덕 노래방 정보와 셔츠룸은 유사한 범주로 묶이곤 하지만 두 서비스는 운영 성격에서 큰 차이를 보입니다. 일반적인 가창 중심의 시설을 원한다면 전자를, 조금 더 특화된 서비스가 필요하다면 후자</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0471.html">공덕 노래방 정보를 찾다가 헤매는 분들을 위한 연남 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">많은 이들이 공덕 노래방 정보를 검색하다가 엉뚱한 지역의 광고성 페이지에 도달하여 시간을 낭비하곤 합니다. 특히 연남동과 같은 핫플레이스는 업소의 회전율이 빠르고 운영 방식이 제각각이라 사전 정보 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0472.html">공덕 노래방 정보 대신 확인하는 마곡 가라오케 추천정보 이용 체크리스트</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾는 과정에서 마곡 지역으로 범위를 넓히는 이용객들이 늘고 있습니다. 마곡은 신도시 특유의 깔끔한 인프라를 갖추고 있어 쾌적한 시설을 선호하는 분들에게 적합한 환경을 제공합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0473.html">공덕 노래방 정보를 찾던 초행자가 주의할 마곡 유흥 추천정보 필독 사항</a>
+        <p class="post-item__summary">동료들과 저녁 식사 후 간단히 한잔하려다 공덕 노래방 정보를 찾는 실수를 범하는 초행자들이 적지 않습니다. 마곡지구의 방대한 상권을 처음 마주하면 어디로 가야 할지 갈피를 잡기 어렵고, 분위기 파악</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003.html">공덕 흑역사 속 간부들의 USB 비밀</a>
+        <p class="post-item__summary">&quot;이건 다른 레벨의 증거다.&quot; 야마내가 천천히 말했다. 그의 손끝엔 아직도 공 던지기로 남은 힘이 묻어 있었지. 우리는 두 시트를 비교했어. 스노든이 직접 만든 원본에는 미국 국무부 인증 번호가, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004.html">초보자도 쉽게 따라하는 공덕 노래방 정보 완벽 가이드</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">공덕 노래방 정보 안내</a>
+        <p class="post-item__summary">서울 공덕 지역의 노래방은 전반적으로 다양한 음악 장르와 쾌적한 공간을 갖추고 있어 대중적인 취향을 잘 반영하고 있습니다. 이 지역은 교통 접근성이 좋아 많은 사람들이 찾는 명소 중 하나이며, 노래</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">공덕 노래방 정보 및 관련 용어 안내</a>
+        <p class="post-item__summary">공덕 지역의 노래방은 접근성이 좋고 다양한 분위기의 공간을 갖추고 있어 이용객이 꾸준히 찾고 있습니다. 노래방을 선택할 때는 인테리어 스타일, 노래방 내부의 음질 수준, 그리고 실내 청결 상태 등 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">공덕 노래방 정보 가이드</a>
+        <p class="post-item__summary">공덕 지역에서 노래방을 선택할 때는 다양한 장르의 음악과 쾌적한 공간 여부를 고려하는 것이 중요합니다. 노래방을 이용할 때는 기본 용어들을 미리 숙지해두면 보다 원활하게 취향을 선택할 수 있습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">노래방 선택 시 가장 중요한 요소는 이용 가격과 공간의 쾌적함입니다. 공덕 지역에는 다양한 업소가 위치해 있어, 목적에 맞는 장소를 찾는 것이 중요합니다. 특히 학생이나 직장인들이 부담 없이 방문할</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
